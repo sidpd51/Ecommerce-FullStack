@@ -167,7 +167,7 @@ function Cart() {
     }, 1000)
 
     return () => {
-      clearTimeout(timeOutID);d
+      clearTimeout(timeOutID);
       setIsValidCouponCode(false)
     }
   }, [couponCode]);

@@ -3,8 +3,8 @@ import { FaSearch, FaShoppingBag, FaSignInAlt, FaSignOutAlt, FaUser } from "reac
 import { Link } from "react-router-dom"
 
 const user = {
-    _id: "123",
-    role: "admin"
+    _id: "",
+    role: ""
 }
 function Header() {
 
@@ -14,7 +14,7 @@ function Header() {
     }
     return (
         <nav className="header">
-            <Link onClick={()=> setIsOpen(false)} to={"/"}>Home</Link>
+            <Link onClick={()=> setIsOpen(false)} to={"/"}>HOME</Link>
             <Link onClick={()=> setIsOpen(false)} to={"/search"}>{" "}<FaSearch />{" "}</Link>
             <Link onClick={()=> setIsOpen(false)} to={"/cart"}>{" "}<FaShoppingBag />{" "}</Link>
             {
