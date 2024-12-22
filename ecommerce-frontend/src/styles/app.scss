@@ -45,6 +45,18 @@ $color3: rgb(0, 104, 136);
 @import "admin-styles/dashboardapp";
 @import "admin-styles/mediaquery";
 
+.container {
+    max-width: 1367px;
+    width: 100%;
+    margin: auto;
+    overflow: auto;
+    >h1 {
+        @include heading;
+        margin: 1rem 0;
+        text-align: left;
+    }
+}
+
 .header {
     @include flex(row, flex-end, stretch, 1.2rem);
 

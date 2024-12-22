@@ -23,6 +23,8 @@ const Stopwatch = lazy(() => import("./pages/admin/apps/stopwatch"));
 const Toss = lazy(() => import("./pages/admin/apps/toss"));
 const NewProduct = lazy(() => import("./pages/admin/management/newproduct"));
 const Shipping = lazy(() => import("./pages/Shipping"))
+const Orders = lazy(() => import("./pages/Orders"))
+const OrderDetails = lazy(() => import("./pages/OrderDetails"))
 const ProductManagement = lazy(
   () => import("./pages/admin/management/productmanagement")
 );
@@ -47,6 +49,8 @@ function App() {
           {/* Logged in user routes  */}
           <Route>
             <Route path="/shipping" element={<Shipping />} />
+            <Route path="/orders" element={<Orders />} />
+            <Route path="/order/:id" element={<OrderDetails />} />
           </Route>
 
 
